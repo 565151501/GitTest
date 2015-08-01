@@ -1,5 +1,7 @@
 package com.example.snoopy.gittest;
 
+import android.app.ActionBar;
+import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,9 +17,16 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    @Nullable
+    @Override
+    public ActionBar getActionBar() {
+        return super.getActionBar();
+    }
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+
     }
 
     @Override
